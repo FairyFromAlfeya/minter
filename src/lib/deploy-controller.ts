@@ -131,9 +131,9 @@ class JettonDeployController {
       messages: [
         {
           address: jettonMaster.toString(),
-          amount: toNano(0.04).toString(),
+          amount: toNano(0.05).toString(),
           stateInit: undefined,
-          payload: mintBody(Address.parse(walletAddress), amount, toNano(0.02), 0)
+          payload: mintBody(Address.parse(walletAddress), amount, toNano(0.01), 0)
             .toBoc()
             .toString("base64"),
         },
